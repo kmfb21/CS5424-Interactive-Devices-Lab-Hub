@@ -1,12 +1,6 @@
-# IDD-Fa18-Lab1: Blink!
+# IDD-Fa19-Lab1: Blink!
 
-**A lab report by John Q. Student**
-
-**Fork** this repository to get a template for Lab 1 for *Developing and Designing Interactive Devices* at Cornell Tech, Fall 2018. You should modify this `README.md` file to delete this paragraph and update below. As the lab asks:
-
-> Include your responses to the bold questions on your own fork of the lab activities. Include snippets of code that explain what you did. Deliverables are due next Tuesday. Post your lab reports as `README.md` pages on your GitHub, and post a link to that on your main class hub page.
-
-We've copied the questions from the lab here. Answer them below!
+**A lab report by Bo Fang**
 
 ## Part A. Set Up a Breadboard
 
@@ -16,24 +10,75 @@ We've copied the questions from the lab here. Answer them below!
 ## Part B. Manually Blink a LED
 
 **a. What color stripes are on a 100 Ohm resistor?**
+
+Brown (1), Black (0), Black (0), which represents 100 Ohm
  
 **b. What do you have to do to light your LED?**
 
+Add LED and resistor to the circuit like photo below:
+[inserting photo...]
+When we can simply light it up by pressing the switch.
 
 ## Part C. Blink a LED using Arduino
 
 ### 1. Blink the on-board LED
 
+Blink example code:
+
+```
+// the setup function runs once when you press reset or power the board
+void setup() {
+  // initialize digital pin LED_BUILTIN as an output.
+  pinMode(LED_BUILTIN, OUTPUT);
+}
+
+// the loop function runs over and over again forever
+void loop() {
+  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
+  delay(1000);                       // wait for a second
+  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
+  delay(1000);                       // wait for a second
+}
+```
+
 **a. What line(s) of code do you need to change to make the LED blink (like, at all)?**
+
+This makes LED on:
+
+```
+digitalWrite(LED_BUILTIN, HIGH);
+```
+
+And this makes LED off:
+
+```
+digitalWrite(LED_BUILTIN, LOW);
+```
+
+Which are put together and make the LED blink.
 
 **b. What line(s) of code do you need to change to change the rate of blinking?**
 
+We need to change both delay() calls after it turns LED on and off
+
+```
+ON
+delay(1000);
+OFF
+delay(1000);
+```
+
 **c. What circuit element would you want to add to protect the board and external LED?**
+
+We need another resistor to protect our external LED.
  
 **d. At what delay can you no longer *perceive* the LED blinking? How can you prove to yourself that it is, in fact, still blinking?**
 
+When delay(15) or less, I can barely see it blinking. To prove, we can use a high frequence camera or test voltage between the LED and ground.
+
 **e. Modify the code to make your LED blink your way. Save your new blink code to your lab 1 repository, with a link on the README.md.**
 
+[Adding link]
 
 ### 2. Blink your LED
 
