@@ -120,20 +120,43 @@ void loop() {
 
 ### 1. Take apart your electronic device, and draw a schematic of what is inside. 
 
+**I'm using a USB fan:**
+![Part-F.png](Part-F.png)
+![Part-F-1-2](Part-F-1-2.png)
+**Inside:**
+![Part-F-1.png](Part-F-1.png)
+**schematic:**
+![Part-F-1.jpeg](Part-F-1.jpeg)
+
 **a. Is there computation in your device? Where is it? What do you think is happening inside the "computer?"**
+
+No there isn't any computation.
 
 **b. Are there sensors on your device? How do they work? How is the sensed information conveyed to other portions of the device?**
 
+No there aren't any sensors but the switch. When you press the switch it enables the circuit.
+![Part-F-1-b](Part-F-1-b.png)
+
 **c. How is the device powered? Is there any transformation or regulation of the power? How is that done? What voltages are used throughout the system?**
+
+The device is powered by USB-A port. As my MacBook Air indicates, the output of USB-A is 5V, which is same as requirement of the fan. There isn't any trasformation of the power.
 
 **d. Is information stored in your device? Where? How?**
 
+No information is stored.
+
 ### 2. Using your schematic, figure out where a good point would be to hijack your device and implant an LED.
 
-**Describe what you did here.**
+Since the device is simple enough, I just need to set up another circuit with the same power from USB output.
+
+![Part-F-2](Part-F-2.png)
 
 ### 3. Build your light!
 
 **Make a video showing off your Frankenlight.**
 
+[Video Link](https://youtu.be/GOBdNev6VcQ)
+
 **Include any schematics or photos in your lab write-up.**
+
+![Part-F-3](Part-F-3.jpeg)
