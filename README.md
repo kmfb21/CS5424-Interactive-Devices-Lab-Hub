@@ -84,6 +84,8 @@ When delay(15) or less, I can barely see it blinking. To prove, we can use a hig
 
 **Make a video of your LED blinking, and add it to your lab submission.**
 
+[Link to code]
+
 [link to your video here; feel free to upload to youtube and just paste in a link here]
 
 
@@ -91,13 +93,29 @@ When delay(15) or less, I can barely see it blinking. To prove, we can use a hig
 
 **a. Are you able to get the LED to glow the whole turning range of the potentiometer? Why or why not?**
 
+No. Because there is only a small range of resistance that the potentiometer can provide. If it can provide resistance large enough, we can make the LED almost off. If it can provide 0 resistance, we can make the LED bright enough.
 
 ## Part E. Fade an LED using Arduino
 
 **a. What do you have to modify to make the code control the circuit you've built on your breadboard?**
 
+Change the line to pin 5V to pin 11.
+And then let the code output to pin 11:
+
+```
+int i = 0;
+// the loop function runs over and over again forever
+void loop() {
+  analogWrite(11, i--);
+  delay(5);
+  if (i <= 0) i = 255;
+}
+```
+[link to code]
+
 **b. What is analogWrite()? How is that different than digitalWrite()?**
 
+**analogWrite** allows us to set an exact value of the out put led brightness instead of choosing from HIGH and LOW. digitalWrite can only choose HIGH and LOW to turn LED on and off.
 
 ## Part F. FRANKENLIGHT!!!
 
