@@ -4,8 +4,7 @@
 
 ## Part A. Set Up a Breadboard
 
-[insert a photo of your breadboard setup here]
-
+![Part-A.png](Part-A.png)
 
 ## Part B. Manually Blink a LED
 
@@ -16,7 +15,7 @@ Brown (1), Black (0), Black (0), which represents 100 Ohm
 **b. What do you have to do to light your LED?**
 
 Add LED and resistor to the circuit like photo below:
-[inserting photo...]
+![Part-B.png](Part-B.png)
 When we can simply light it up by pressing the switch.
 
 ## Part C. Blink a LED using Arduino
@@ -78,15 +77,15 @@ When delay(15) or less, I can barely see it blinking. To prove, we can use a hig
 
 **e. Modify the code to make your LED blink your way. Save your new blink code to your lab 1 repository, with a link on the README.md.**
 
-[Adding link]
+[LINK](https://github.com/kmfb21/CS5424-IDD-Fa19-Lab1/blob/master/Part-C-1-e.ino)
 
 ### 2. Blink your LED
 
 **Make a video of your LED blinking, and add it to your lab submission.**
 
-[Link to code]
+[Link to code](https://github.com/kmfb21/CS5424-IDD-Fa19-Lab1/blob/master/Part-C-2.ino)
 
-[link to your video here; feel free to upload to youtube and just paste in a link here]
+[link to your video here](https://youtu.be/vgKtDyHyXRU)
 
 
 ## Part D. Manually fade an LED
@@ -111,7 +110,7 @@ void loop() {
   if (i <= 0) i = 255;
 }
 ```
-[link to code]
+[link to code](https://github.com/kmfb21/CS5424-IDD-Fa19-Lab1/blob/master/Part-E.ino)
 
 **b. What is analogWrite()? How is that different than digitalWrite()?**
 
