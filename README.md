@@ -95,4 +95,6 @@ Starwars
 
 **a. Make a short video showing how your timer works, and what happens when time is up!**
 
+[link to your video here](https://youtu.be/RB4VWY-ZNtU)
+
 **b. Post a link to the completed lab report your class hub GitHub repo.**
