@@ -98,3 +98,5 @@ Starwars
 [link to your video here](https://youtu.be/RB4VWY-ZNtU)
 
 **b. Post a link to the completed lab report your class hub GitHub repo.**
+
+[Prelab](https://github.com/kmfb21/CS5424-IDD-Fa19-Lab2/blob/master/Lab2-Prelab.pdf)
