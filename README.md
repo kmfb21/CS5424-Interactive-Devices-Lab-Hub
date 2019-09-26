@@ -1,6 +1,6 @@
 # Data Logger (and using cool sensors!)
 
-*A lab report by John Q. Student.*
+*A lab report by Bo Fang.*
 
 ## In The Report
 
@@ -22,23 +22,50 @@ From 0 to 1023.
 
 **How might you use this with only the parts in your kit? Show us your solution.**
 
+We connect all three pings with resistors and 3 pings on the board.
+![Part-B.png](Part-B.png)
+
 ## Part C. Voltage Varying Sensors 
  
 ### 1. FSR, Flex Sensor, Photo cell, Softpot
 
 **a. What voltage values do you see from your force sensor?**
 
-0 - 1013
+I saw analog value from 0 - 1013
 
 **b. What kind of relationship does the voltage have as a function of the force applied? (e.g., linear?)**
 
-As the force applied, the voltage goes higher
+As the force applied, the voltage goes higher, it is more like a linear increasing.
 
 **c. Can you change the LED fading code values so that you get the full range of output voltages from the LED when using your FSR?**
 
+Old version LED fading:
+
+```
+void loop() {
+  analogWrite(11, i--);
+  delay(5);
+  if (i <= 0) i = 255;
+}
+```
+Since we know the analog range is 0-1013 (approx 1000)
+and analogWrite range is 0-255 (approx 250)
+we map 0-1000 to 0-250 by divide by 4
+New version using analogRead(A0):
+
+```
+void loop() {
+  analogWrite(11, analogRead(A0) / 4);
+}
+```
+
 **d. What resistance do you need to have in series to get a reasonable range of voltages from each sensor?**
 
+I used 3 10k-Ohm resistors to make it has 30k Ohm
+
 **e. What kind of relationship does the resistance have as a function of stimulus? (e.g., linear?)**
+
+Linear
 
 ### 2. Accelerometer
  
