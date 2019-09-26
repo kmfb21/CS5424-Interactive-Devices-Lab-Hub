@@ -11,8 +11,12 @@ For this lab, we will be experimenting with a variety of sensors, sending the da
 ## Part A.  Writing to the Serial Monitor
  
 **a. Based on the readings from the serial monitor, what is the range of the analog values being read?**
- 
+
+From 0 to 1023.
+
 **b. How many bits of resolution does the analog to digital converter (ADC) on the Arduino have?**
+
+0 to 1023 is 1024 numbers, which is 10 bits.
 
 ## Part B. RGB LED
 
@@ -24,7 +28,11 @@ For this lab, we will be experimenting with a variety of sensors, sending the da
 
 **a. What voltage values do you see from your force sensor?**
 
+0 - 1013
+
 **b. What kind of relationship does the voltage have as a function of the force applied? (e.g., linear?)**
+
+As the force applied, the voltage goes higher
 
 **c. Can you change the LED fading code values so that you get the full range of output voltages from the LED when using your FSR?**
 
