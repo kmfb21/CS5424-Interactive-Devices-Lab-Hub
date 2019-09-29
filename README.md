@@ -61,7 +61,7 @@ void loop() {
 
 **d. What resistance do you need to have in series to get a reasonable range of voltages from each sensor?**
 
-I used 3 10k-Ohm resistors to make it has 30k Ohm
+For the FSR it should be 27k, I used 3 10k-Ohm resistors to make it has 30k Ohm
 
 **e. What kind of relationship does the resistance have as a function of stimulus? (e.g., linear?)**
 
