@@ -75,6 +75,7 @@ Linear
 ## Optional. Graphic Display
 
 **Take a picture of your screen working insert it here!**
+![Part-E.png](Part-E.png)
 
 ## Part D. Logging values to the EEPROM and reading them back
  
