@@ -56,6 +56,8 @@ Step of "pos" and delay in loop controls the speed.
 
 **a. Make a video of your proto puppet.**
 
+[Big sweep from 25 to 115 then small sweep from 45 to 95](https://youtu.be/nF0K6g4acR4)
+
 ## Part E. Make it your own
 
 **a. Make a video of your final design.**
