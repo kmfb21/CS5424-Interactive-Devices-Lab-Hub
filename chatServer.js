@@ -71,11 +71,11 @@ function bot(data, socket, questionNum) {
     if (input.toLowerCase() === 'yes' || input === 1) {
       answer = 'Perfect!';
       waitTime = 5000;
-      question = 'So there is a easy way......';
+      question = 'So there is a easy way......want to know what it is?';
     } else if (input.toLowerCase() === 'no' || input === 0) {
       socket.emit('changeFont', 'white'); /// we really should look up the inverse of what we said befor.
       answer = ''
-      question = 'U sure?';
+      question = 'U sure? I\'m really good at it. Do you want me to help you out?';
       waitTime = 0;
       questionNum--; // Here we go back in the question number this can end up in a loop
     } else {
