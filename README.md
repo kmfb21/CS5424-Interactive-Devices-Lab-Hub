@@ -8,6 +8,7 @@ Completed Labs for Bo Fang
 4. [Bo Fang's Lab 4](https://github.com/kmfb21/CS5424-IDD-Fa19-Lab4)
 5. [Bo Fang's Lab 5](https://github.com/kmfb21/CS5424-IDD-Fa19-Lab5)
 6. [Bo Fang's Lab 6](https://github.com/kmfb21/CS5424-IDD-Fa19-Lab6)
+7. [Bo Fang's Lab 7](https://github.com/kmfb21/CS5424-IDD-Fa19-Lab7)
 
 Prelabs
 
