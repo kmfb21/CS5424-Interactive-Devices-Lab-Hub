@@ -88,6 +88,13 @@ serial.pipe(parser);
 parser.on('data', function(data) {
   console.log('Data:', data);
   io.emit('server-msg', data);
+  if (data=="light") {
+    var imageName = new Date().toString().replace(/[&\/\\#,+()$~%.'":*?<>{}\s-]/g, '');
+    console.log('making a making a picture at'+ imageName);
+    NodeWebcam.capture('public/'+imageName, opts, function( err, data ) {
+      io.emit('newPicture',(imageName+'.jpg'));
+    });
+  }
 });
 //----------------------------------------------------------------------------//
 
