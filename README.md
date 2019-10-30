@@ -46,4 +46,27 @@ parser.on('data', function(data) {
 
 **a. Find, install, and try out a node-based library and try to incorporate into your lab. Document your successes and failures (totally okay!) for your writeup. This will help others in class figure out cool new tools and capabilities.**
 
+I installed [GM](https://www.npmjs.com/package/gm) and applied "crazytown" on all pictures token:
+
+```
+    NodeWebcam.capture('public/'+imageName, opts, function( err, data ) {
+      var fs = require('fs')
+        , gm = require('gm');
+      gm('public/'+imageName+'.jpg')
+        .flip()
+        .magnify()
+        .rotate('green', 45)
+        .blur(7, 3)
+        .crop(300, 300, 150, 130)
+        .edge(3)
+        .write('public/'+imageName+'.jpg', function (err) {
+          if (!err) console.log('crazytown has arrived');
+          io.emit('newPicture',(imageName+'.jpg'));
+      });
+    });
+
+```
+
 **b. Upload a video of your working modified project**
+
+[Video](https://youtu.be/qua_8gYLtTE)
