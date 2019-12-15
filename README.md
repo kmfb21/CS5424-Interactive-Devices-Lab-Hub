@@ -13,3 +13,7 @@ Completed Labs for Bo Fang
 Prelabs
 
 * [Prelab 02](https://github.com/kmfb21/CS5424-IDD-Fa19-Lab2/blob/master/Lab2-Prelab.pdf) 
+
+Final Project
+
+* [Interactive Gauntlet](https://github.com/yw2224/Interactive-Lab-Hub/blob/master/Final/doc.md)
